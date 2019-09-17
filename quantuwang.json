@@ -101,13 +101,13 @@
             {"name":"自拍区","url":"http://718zp.com/?cate=2"}
         ], 
         "pages": {
-            "element": ".cardlist article", 
+            "element": "article", 
             "name": {
-                "element": "h3 a",
+                "element": "h3 > a",
                 "attr": "title"
             },
             "url": {
-                "element": "h3 a",
+                "element": "h3 > a",
                 "attr": "href",
                 "needMerge": true
             },
@@ -128,7 +128,15 @@
             "element": ".article-content img", 
             "nextPageUrlMode": {
                 "incrementMode": "image",
-                "imageSuffix":"jpg"
+                "imageSuffix":"jpeg"
+            }, 
+            "lastPage": {
+                "element": "", 
+                "minPageLength": 2, 
+                "attr": "@text", 
+                "descIndex": 1, 
+                "isNeedSplit": false, 
+                "splits": []
             }
         }, 
         "supportReptileVersion": 1
