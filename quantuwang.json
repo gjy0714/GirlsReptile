@@ -92,5 +92,45 @@
             }
         }, 
         "supportReptileVersion": 1
+    },
+    {
+        "name": "718自拍", 
+        "key":"718zp",
+        "url": "http://718zp.com/", 
+        "tags": [
+            {"name":"自拍区","url":"http://718zp.com/?cate=2"}
+        ], 
+        "pages": {
+            "element": ".cardlist article", 
+            "name": {
+                "element": "h3 a",
+                "attr": "title"
+            },
+            "url": {
+                "element": "h3 a",
+                "attr": "href",
+                "needMerge": true
+            },
+            "nextPageUrlMode": {
+                "mode": "add", 
+                "addValue": "&page={page}"
+            }, 
+            "lastPage": {
+                "element": ".pagination a", 
+                "minPageLength": 2, 
+                "attr": "@text", 
+                "descIndex": 1, 
+                "isNeedSplit": false, 
+                "splits": []
+            }
+        }, 
+        "imgs": {
+            "element": ".article-content img", 
+            "nextPageUrlMode": {
+                "incrementMode": "image",
+                "imageSuffix":"jpg"
+            }
+        }, 
+        "supportReptileVersion": 1
     }
 ]
