@@ -117,7 +117,7 @@
             }, 
             "lastPage": {
                 "element": ".pagination a", 
-                "minPageLength": 2, 
+                "minPageLength": 1, 
                 "attr": "@text", 
                 "descIndex": 1, 
                 "isNeedSplit": false, 
@@ -128,7 +128,7 @@
             "element": ".article-content img", 
             "nextPageUrlMode": {
                 "incrementMode": "image",
-                "imageSuffix":"jpeg"
+                "imageSuffix":"jpg"
             }, 
             "lastPage": {
                 "element": "", 
